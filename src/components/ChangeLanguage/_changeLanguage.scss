@@ -1,0 +1,14 @@
+.faGlobe {
+  font-size: 4rem;
+  cursor: pointer;
+  transition: color .3s;
+
+  @media only screen and (max-width: 800px) {
+    color: cyan;
+    order: 1;
+  }
+
+  &:hover {
+    color: cyan;
+  }
+}
