@@ -2,7 +2,7 @@
   width: 7rem;
   height: 3.5rem;
   border-radius: 20px;
-  background-color: #969696;
+  background-color: #077eec;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -25,7 +25,7 @@
     left: auto;
     right: auto;
     bottom: auto;
-    z-index: 10;
+    transform: translateX(3.5rem);
     transition: all 0.3s;
   }
 
@@ -44,9 +44,9 @@
 }
 
 .lightMode {
-  background-color: #077eec;
+  background-color: #969696;
 }
 
 .lightMode-circle {
-  transform: translateX(3.5rem);
+  transform: translateX(0);
 }
