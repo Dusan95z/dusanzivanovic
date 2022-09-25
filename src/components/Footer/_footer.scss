@@ -15,7 +15,9 @@ footer {
   p {
     font-size: 1.6rem;
     @include montserratMedium;
+    text-align: center;
     color: #d4d4d4;
+    pointer-events: none;
 
     &:not(:last-child) {
       margin-bottom: .5rem;

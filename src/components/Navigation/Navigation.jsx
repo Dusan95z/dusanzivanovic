@@ -4,12 +4,12 @@ import NavigationLink from './NavigationLink';
 import NavigationContext from '../../context/NavigationContext';
 
 const Navigation = () => {
-  const { nav, handleZindex } = useContext(NavigationContext);
+  const { nav } = useContext(NavigationContext);
 
   return (
     <nav
       className={nav ? 'headerNav headerNav-active' : 'headerNav'}
-      onTransitionEnd={handleZindex}
+      onTransitionEnd={(e) => e.target.classList.add('headerNav-active-zindex')}
     >
       <ul className='nav-ul'>
         <NavigationLink pathName='/' linkTitle='Home' />

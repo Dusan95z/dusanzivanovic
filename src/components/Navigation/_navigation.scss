@@ -2,10 +2,10 @@
 
 .headerNav {
   @media only screen and (max-width: 800px) {
+    width: 100%;
+    background-color: #232323;
     position: absolute;
     top: -23rem;
-    background-color: #232323;
-    width: 100%;
     z-index: -10;
     transition: top 0.5s;
   }
@@ -24,7 +24,7 @@
         margin-right: 10rem;
 
         @media only screen and (max-width: 1000px) {
-          margin-right: 7rem;
+          margin-right: 6rem;
         }
 
         @media only screen and (max-width: 800px) {

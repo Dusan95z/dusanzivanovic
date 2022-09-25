@@ -1,19 +1,13 @@
 import './_hamburgerMenu.scss';
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import NavigationContext from '../../context/NavigationContext';
 
 const HamburgerMenu = () => {
-  const [menu, setMenu] = useState(false);
-  const { handleNav } = useContext(NavigationContext);
-
-  const handleMenu = () => {
-    setMenu((prev) => !prev);
-    handleNav();
-  };
+  const { menu, handleNav } = useContext(NavigationContext);
 
   return (
     <div
-      onClick={handleMenu}
+      onClick={handleNav}
       className={menu ? 'hamburgerMenu hamburgerMenu-active' : 'hamburgerMenu'}
     >
       <div className='hamburgerMenu-line1'></div>

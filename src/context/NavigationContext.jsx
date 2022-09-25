@@ -4,19 +4,22 @@ const NavigationContext = createContext();
 
 export const NavigationContextProvider = ({ children }) => {
   const [nav, setNav] = useState(false);
+  const [menu, setMenu] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const handleNav = () => {
     setNav((prev) => !prev);
+    setMenu((prev) => !prev);
   };
 
-  const handleZindex = () => {
-    document
-      .querySelector('.headerNav')
-      .classList.add('headerNav-active-zindex');
+  const handleDarkMode = () => {
+    setDarkMode((prev) => !prev);
   };
 
   return (
-    <NavigationContext.Provider value={{ nav, handleNav, handleZindex }}>
+    <NavigationContext.Provider
+      value={{ nav, menu, darkMode, handleNav, handleDarkMode }}
+    >
       {children}
     </NavigationContext.Provider>
   );

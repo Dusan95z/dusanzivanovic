@@ -1,0 +1,52 @@
+.darkMode {
+  width: 7rem;
+  height: 3.5rem;
+  border-radius: 20px;
+  background-color: #969696;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s;
+
+  @media only screen and (max-width: 800px) {
+    order: 1;
+    transform: translateX(-1.5rem);
+  }
+
+  &-circle {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    z-index: 10;
+    transition: all 0.3s;
+  }
+
+  &-dark,
+  &-light {
+    font-size: 3rem;
+  }
+
+  &-dark {
+    color: gold;
+  }
+
+  &-light {
+    color: orange;
+  }
+}
+
+.lightMode {
+  background-color: #077eec;
+}
+
+.lightMode-circle {
+  transform: translateX(3.5rem);
+}

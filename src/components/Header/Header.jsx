@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
-import ChangeLanguage from '../ChangeLanguage/ChangeLanguage';
+import DarkMode from '../DarkMode/DarkMode';
 import NavigationContext from '../../context/NavigationContext';
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
     <header className={nav ? 'header-navActive' : ''}>
       <Logo />
       <Navigation />
-      <ChangeLanguage />
+      <DarkMode/>
       <HamburgerMenu />
     </header>
   );
