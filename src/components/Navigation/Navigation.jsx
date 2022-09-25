@@ -1,6 +1,6 @@
 import './_navigation.scss';
-import NavigationLink from './NavigationLink';
 import { useContext } from 'react';
+import NavigationLink from './NavigationLink';
 import NavigationContext from '../../context/NavigationContext';
 
 const Navigation = () => {
