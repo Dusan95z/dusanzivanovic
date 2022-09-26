@@ -14,13 +14,20 @@ export const NavigationContextProvider = ({ children }) => {
     setMenu((prev) => !prev);
   };
 
+  const handleMenu = () => {
+    if (nav === true) {
+      setMenu(false);
+      setNav(false);
+    }
+  };
+
   const handleDarkMode = () => {
     setDarkMode((prev) => !prev);
   };
 
   return (
     <NavigationContext.Provider
-      value={{ nav, menu, darkMode, handleNav, handleDarkMode }}
+      value={{ nav, menu, darkMode, handleNav, handleMenu, handleDarkMode }}
     >
       {children}
     </NavigationContext.Provider>

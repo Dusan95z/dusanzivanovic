@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 import NavigationContext from '../../context/NavigationContext';
 
 const NavigationLink = ({ pathName, linkTitle }) => {
-  const { handleNav } = useContext(NavigationContext);
+  const { handleMenu } = useContext(NavigationContext);
 
   return (
     <li className='nav-li'>
       <NavLink
-        onClick={handleNav}
+        onClick={handleMenu}
         to={{ pathname: `${pathName}` }}
         end
         className={({ isActive }) =>

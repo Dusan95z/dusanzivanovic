@@ -8,7 +8,6 @@ footer {
   align-items: center;
   justify-content: center;
 
-
   p {
     font-size: 1.6rem;
     @include montserratMedium;
@@ -17,7 +16,7 @@ footer {
     pointer-events: none;
 
     &:not(:last-child) {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
   }
 }
