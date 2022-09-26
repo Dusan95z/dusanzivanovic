@@ -2,7 +2,6 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
-  overflow: hidden;
 
   @media only screen and (max-width: 800px) {
     order: 3;
@@ -35,7 +34,7 @@
   }
 
   .hamburgerMenu-line2 {
-    transform: translateX(4rem);
+    transform: rotate(360deg);
     opacity: 0;
   }
 
