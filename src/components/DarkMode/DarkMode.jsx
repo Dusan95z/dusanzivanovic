@@ -1,10 +1,14 @@
 import './_darkMode.scss';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import NavigationContext from '../../context/NavigationContext';
 
 const DarkMode = () => {
   const { darkMode, handleDarkMode } = useContext(NavigationContext);
+
+  useEffect(() => {
+    localStorage.setItem('dark-mode', darkMode);
+  }, [darkMode]);
 
   return (
     <div
