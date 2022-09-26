@@ -5,15 +5,33 @@ import Navigation from '../Navigation/Navigation';
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
 import DarkMode from '../DarkMode/DarkMode';
 import NavigationContext from '../../context/NavigationContext';
+import ThemeContext from '../../context/ThemeContext';
 
 const Header = () => {
-  const {nav} = useContext(NavigationContext);
+  const { nav } = useContext(NavigationContext);
+  const { darkMode } = useContext(ThemeContext);
+
+  const handleClasses = () => {
+    if (nav && darkMode) {
+      return 'header-navActive';
+    } else if (nav && !darkMode) {
+      return 'header-navActive lightTheme-header';
+    } else if (!nav && darkMode) {
+      return '';
+    } else if (!nav && !darkMode) {
+      return 'lightTheme-header';
+    }
+  };
 
   return (
-    <header className={nav ? 'header-navActive' : ''}>
+    <header
+      className={
+        handleClasses()
+      }
+    >
       <Logo />
       <Navigation />
-      <DarkMode/>
+      <DarkMode />
       <HamburgerMenu />
     </header>
   );

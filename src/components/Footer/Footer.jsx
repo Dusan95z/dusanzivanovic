@@ -1,9 +1,9 @@
 import './_footer.scss';
 import { useContext } from 'react';
-import NavigationContext from '../../context/NavigationContext';
+import ThemeContext from '../../context/ThemeContext';
 
 const Footer = () => {
-  const { darkMode } = useContext(NavigationContext);
+  const { darkMode } = useContext(ThemeContext);
 
   return (
     <footer className={darkMode ? '' : 'lightTheme-footer'}>

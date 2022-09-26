@@ -2,13 +2,27 @@ import './_navigation.scss';
 import { useContext } from 'react';
 import NavigationLink from './NavigationLink';
 import NavigationContext from '../../context/NavigationContext';
+import ThemeContext from '../../context/ThemeContext';
 
 const Navigation = () => {
   const { nav } = useContext(NavigationContext);
+  const { darkMode } = useContext(ThemeContext);
+
+  const handleClasses = () => {
+    if (nav && darkMode) {
+      return 'headerNav headerNav-active';
+    } else if (nav && !darkMode) {
+      return 'headerNav headerNav-active lightTheme-headerNav'
+    } else if (!nav && darkMode) {
+      return 'headerNav'
+    } else if(!nav && !darkMode) {
+      return 'headerNav lightTheme-headerNav '
+    }
+  };
 
   return (
     <nav
-      className={nav ? 'headerNav headerNav-active' : 'headerNav'}
+      className={handleClasses()}
       onTransitionEnd={(e) =>
         e.target.classList.contains('headerNav-active') &&
         e.target.classList.add('headerNav-active-zindex')

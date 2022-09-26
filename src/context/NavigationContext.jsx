@@ -5,9 +5,6 @@ const NavigationContext = createContext();
 export const NavigationContextProvider = ({ children }) => {
   const [nav, setNav] = useState(false);
   const [menu, setMenu] = useState(false);
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem('dark-mode') === 'true'
-  );
 
   const handleNav = () => {
     setNav((prev) => !prev);
@@ -21,13 +18,9 @@ export const NavigationContextProvider = ({ children }) => {
     }
   };
 
-  const handleDarkMode = () => {
-    setDarkMode((prev) => !prev);
-  };
-
   return (
     <NavigationContext.Provider
-      value={{ nav, menu, darkMode, handleNav, handleMenu, handleDarkMode }}
+      value={{ nav, menu, handleNav, handleMenu }}
     >
       {children}
     </NavigationContext.Provider>

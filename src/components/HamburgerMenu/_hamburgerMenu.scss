@@ -42,3 +42,21 @@
     background-color: red;
   }
 }
+
+// LIGHT THEME
+
+.lightTheme-hamburgerMenu {
+  .hamburgerMenu-line1,
+  .hamburgerMenu-line2,
+  .hamburgerMenu-line3 {
+    background-color: #232323;
+  }
+}
+
+.lightTheme-hamburgerMenu.hamburgerMenu-active {
+  .hamburgerMenu-line1,
+  .hamburgerMenu-line2,
+  .hamburgerMenu-line3 {
+    background-color: red;
+  }
+}

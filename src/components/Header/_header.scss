@@ -8,9 +8,15 @@ header {
   justify-content: space-around;
   color: #d4d4d4;
   position: relative;
-  transition: margin-bottom 0.5s;
+  transition: all 0.5s;
 }
 
 .header-navActive {
   margin-bottom: 23rem;
+}
+
+// LIGHT MODE
+
+.lightTheme-header {
+  background-color: #d4d4d4;
 }

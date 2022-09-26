@@ -75,3 +75,39 @@
 .headerNav-active-zindex {
   z-index: auto;
 }
+
+// LIGHT THEME
+
+.lightTheme-headerNav {
+  @media only screen and (max-width: 800px) {
+    background-color: #d4d4d4;
+  }
+
+  .nav-ul {
+    .nav-li {
+      .nav-link {
+        color: #232323;
+
+        @media only screen and (min-width: 800px) {
+          &:hover {
+            color: grey;
+          }
+        }
+      }
+
+      .nav-link-active {
+        color: #232323;
+
+        @media only screen and (min-width: 800px) {
+          &:hover {
+            color: #232323;
+          }
+        }
+
+        &::after {
+          background-color: #232323;
+        }
+      }
+    }
+  }
+}
