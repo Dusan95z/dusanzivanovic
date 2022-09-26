@@ -7,7 +7,7 @@
     position: absolute;
     top: -23rem;
     z-index: -10;
-    transition: top 0.5s;
+    transition: all 0.5s;
   }
 
   .nav-ul {
@@ -36,8 +36,8 @@
       .nav-link {
         font-size: 2.5rem;
         @include montserratBold;
-        transition: color 0.3s;
         position: relative;
+        transition: color 0.5s;
 
         @media only screen and (min-width: 800px) {
           &:hover {
@@ -62,6 +62,7 @@
           left: 0;
           right: 0;
           border-radius: 5px;
+          transition: all 0.5s;
         }
       }
     }
