@@ -1,8 +1,8 @@
 import './_app.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
+import Header from './layouts/Header/Header';
 import Home from './pages/Home/Home';
-import Footer from './components/Footer/Footer';
+import Footer from './layouts/Footer/Footer';
 import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 

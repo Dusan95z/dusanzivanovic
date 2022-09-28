@@ -1,9 +1,9 @@
 import './_header.scss';
 import { useContext } from 'react';
-import Logo from '../Logo/Logo';
-import Navigation from '../Navigation/Navigation';
-import HamburgerMenu from '../HamburgerMenu/HamburgerMenu';
-import DarkMode from '../DarkMode/DarkMode';
+import Logo from '../../features/Logo/Logo';
+import Navigation from '../../features/Navigation/Navigation';
+import HamburgerMenu from '../../features/HamburgerMenu/HamburgerMenu';
+import DarkMode from '../../features/DarkMode/DarkMode';
 import NavigationContext from '../../context/NavigationContext';
 import ThemeContext from '../../context/ThemeContext';
 
