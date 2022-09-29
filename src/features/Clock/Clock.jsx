@@ -4,7 +4,7 @@ import DigitalClock from './DigitalClock';
 import ThemeContext from '../../context/ThemeContext';
 
 const Clock = () => {
-  const {darkMode} = useContext(ThemeContext)
+  const { darkMode } = useContext(ThemeContext);
   const [seconds, setSeconds] = useState(new Date().getSeconds() * 6);
   const [minutes, setMinutes] = useState(new Date().getMinutes() * 6);
   const [hours, setHours] = useState(
