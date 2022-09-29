@@ -4,8 +4,10 @@
   width: 50rem;
   height: 50rem;
   background-color: #232323;
+  border: 3px solid transparent;
   border-radius: 50%;
   position: relative;
+  transition: all 0.5s;
 
   &-name-top {
     color: cyan;
@@ -15,6 +17,7 @@
     top: 25%;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 0.5s;
   }
 
   &-name-bottom {
@@ -25,6 +28,7 @@
     top: 35%;
     left: 50%;
     transform: translateX(-50%);
+    transition: all 0.5s;
   }
 
   &-center-bottom {
@@ -33,6 +37,7 @@
     background-color: #d4d4d4;
     border-radius: 50%;
     @include positionAbsoluteCenter;
+    transition: all 0.5s;
   }
 
   &-center-top {
@@ -41,6 +46,7 @@
     background-color: #232323;
     border-radius: 50%;
     @include positionAbsoluteCenter;
+    transition: all 0.5s;
   }
 
   &-digital {
@@ -59,6 +65,7 @@
     left: 50%;
     opacity: 0.8;
     transform: translateX(-50%);
+    transition: all 0.5s;
   }
 
   &-hour {
@@ -70,6 +77,7 @@
     top: 26%;
     left: 50%;
     transform-origin: bottom;
+    transition: all 0.5s;
   }
 
   &-minute {
@@ -81,6 +89,7 @@
     top: 20%;
     left: 50%;
     transform-origin: bottom;
+    transition: all 0.5s;
   }
 
   &-second {
@@ -92,12 +101,14 @@
     top: 14%;
     left: 50%;
     transform-origin: bottom;
+    transition: all 0.5s;
   }
 
   &-number {
     font-size: 3rem;
     color: cyan;
     position: absolute;
+    transition: all 0.5s;
 
     &-1 {
       top: 4rem;
@@ -147,5 +158,50 @@
       top: 1rem;
       left: 23.5rem;
     }
+  }
+}
+
+// LIGHT THEME
+
+.lightTheme-clock {
+  background-color: #d4d4d4;
+  border-color: #232323;
+
+  .clock-name-top {
+    color: #232323;
+  }
+
+  .clock-name-bottom {
+    color: #232323;
+  }
+
+  .clock-center-bottom {
+    background-color: #232323;
+  }
+
+  .clock-center-top {
+    background-color: #d4d4d4;
+  }
+
+  .clock-digital {
+    background-color: #d4d4d4;
+    border-color: #232323;
+    color: #232323;
+  }
+
+  .clock-hour {
+    background-color: #232323;
+  }
+
+  .clock-minute {
+    background-color: #232323;
+  }
+
+  .clock-second {
+    background-color: #232323;
+  }
+
+  .clock-number {
+    color: #232323;
   }
 }

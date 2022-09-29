@@ -1,8 +1,10 @@
 import './_clock.scss';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import DigitalClock from './DigitalClock';
+import ThemeContext from '../../context/ThemeContext';
 
 const Clock = () => {
+  const {darkMode} = useContext(ThemeContext)
   const [seconds, setSeconds] = useState(new Date().getSeconds() * 6);
   const [minutes, setMinutes] = useState(new Date().getMinutes() * 6);
   const [hours, setHours] = useState(
@@ -16,7 +18,7 @@ const Clock = () => {
   }, 1000);
 
   return (
-    <div className='clock'>
+    <div className={darkMode ? 'clock' : 'clock lightTheme-clock'}>
       <p className='clock-name-top'>Brand</p>
       <p className='clock-name-bottom'>Dark Theme</p>
       <div className='clock-center-bottom'></div>

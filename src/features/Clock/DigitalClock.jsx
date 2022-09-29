@@ -22,7 +22,7 @@ const DigitalClock = () => {
   }
 
   const time = hoursDigital + ':' + minutesDigital + ':' + secondsDigital;
-
+  
   return <div className='clock-digital'>{time}</div>;
 };
 
