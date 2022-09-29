@@ -1,1 +1,151 @@
 @import '../../assets/variables';
+
+.clock {
+  width: 50rem;
+  height: 50rem;
+  background-color: #232323;
+  border-radius: 50%;
+  position: relative;
+
+  &-name-top {
+    color: cyan;
+    font-size: 3.5rem;
+    font-family: cursive;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &-name-bottom {
+    color: cyan;
+    font-size: 2rem;
+    font-family: cursive;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &-center-bottom {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    @include positionAbsoluteCenter;
+  }
+
+  &-center-top {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #232323;
+    border-radius: 50%;
+    @include positionAbsoluteCenter;
+  }
+
+  &-digital {
+    padding: 0.5rem 1rem;
+    background-color: #232323;
+    border: 2px solid #d4d4d4;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: sans-serif;
+    color: cyan;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    opacity: 0.8;
+    transform: translateX(-50%);
+  }
+
+  &-hour {
+    width: 0.7rem;
+    height: 12rem;
+    background-color: cyan;
+    border-radius: 5px;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform-origin: bottom;
+  }
+
+  &-minute {
+    width: 0.45rem;
+    height: 15rem;
+    background-color: cyan;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform-origin: bottom;
+  }
+
+  &-second {
+    width: 0.3rem;
+    height: 18rem;
+    background-color: cyan;
+    border-radius: 5px;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform-origin: bottom;
+  }
+
+  &-number {
+    font-size: 3rem;
+    color: cyan;
+    position: absolute;
+
+    &-1 {
+      top: 4rem;
+      right: 13rem;
+    }
+    &-2 {
+      top: 12.5rem;
+      right: 4.5rem;
+    }
+    &-3 {
+      top: 23.5rem;
+      right: 1rem;
+    }
+    &-4 {
+      top: 34.5rem;
+      right: 4.5rem;
+    }
+    &-5 {
+      top: 43rem;
+      right: 13rem;
+    }
+    &-6 {
+      bottom: 1rem;
+      left: 24rem;
+    }
+    &-7 {
+      top: 43rem;
+      left: 13rem;
+    }
+    &-8 {
+      top: 34.5rem;
+      left: 4.5rem;
+    }
+    &-9 {
+      top: 23.5rem;
+      left: 1rem;
+    }
+    &-10 {
+      top: 12.5rem;
+      left: 4.5rem;
+    }
+    &-11 {
+      top: 4rem;
+      left: 13rem;
+    }
+    &-12 {
+      top: 1rem;
+      left: 23.5rem;
+    }
+  }
+}
