@@ -20,7 +20,7 @@ const Clock = () => {
   return (
     <div className={darkMode ? 'clock' : 'clock lightTheme-clock'}>
       <p className='clock-name-top'>Brand</p>
-      <p className='clock-name-bottom'>Dark Theme</p>
+      <p className='clock-name-bottom'>{darkMode ? 'Dark' : 'Light'} Theme</p>
       <div className='clock-center-bottom'></div>
       <div className='clock-number clock-number-1'>1</div>
       <div className='clock-number clock-number-2'>2</div>
