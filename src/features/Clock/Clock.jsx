@@ -36,15 +36,21 @@ const Clock = () => {
       <div className='clock-number clock-number-12'>12</div>
       <DigitalClock />
       <div
-        className='clock-hour'
+        className={
+          hours === 0 ? 'clock-hour clock-no-transition' : 'clock-hour'
+        }
         style={{ transform: `translateX(-50%) rotate(${hours}deg)` }}
       ></div>
       <div
-        className='clock-minute'
+        className={
+          minutes === 0 ? 'clock-minute clock-no-transition' : 'clock-minute'
+        }
         style={{ transform: `translateX(-50%) rotate(${minutes}deg)` }}
       ></div>
       <div
-        className='clock-second'
+        className={
+          seconds === 0 ? 'clock-second clock-no-transition' : 'clock-second'
+        }
         style={{ transform: `translateX(-50%) rotate(${seconds}deg)` }}
       ></div>
       <div className='clock-center-top'></div>
