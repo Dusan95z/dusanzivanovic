@@ -1,14 +1,21 @@
 import 'react-calendar/dist/Calendar.css';
 import './_calendar.scss';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Calendar from 'react-calendar';
+import ThemeContext from '../../context/ThemeContext';
 
 const CalendarComponent = () => {
   const [value, onChange] = useState(new Date());
 
+  const { darkMode } = useContext(ThemeContext);
+
   return (
     <div>
-      <Calendar onChange={onChange} value={value} />
+      <Calendar
+        className={darkMode ? '' : 'lightTheme'}
+        onChange={onChange}
+        value={value}
+      />
     </div>
   );
 };
