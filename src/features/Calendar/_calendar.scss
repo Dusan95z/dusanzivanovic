@@ -1,0 +1,124 @@
+@import '../../assets/variables';
+
+.react-calendar {
+  width: 50rem;
+  background-color: #232323;
+  margin-right: 30rem;
+  border: 2px solid grey;
+
+  @media only screen and (max-width: 1500px) {
+    margin-right: 20rem;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    margin-right: 10rem;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    margin-right: 0;
+    margin-top: 10rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 5rem;
+  }
+}
+
+.react-calendar__navigation {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid cyan;
+
+  button {
+    height: 100%;
+    width: 10%;
+    background-color: #232323;
+    color: cyan;
+    font-size: 2rem;
+    @include montserratMedium;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:not(:last-child) {
+      border-right: 2px solid cyan;
+    }
+
+    &:enabled:hover {
+      background-color: grey;
+    }
+
+    &:enabled:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+.react-calendar__viewContainer {
+  .react-calendar__month-view {
+    &__weekdays {
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      color: cyan;
+
+      &__weekday {
+        display: flex;
+        justify-content: center;
+        font-size: 1.6rem;
+        @include montserratMedium;
+
+        abbr {
+          text-decoration: underline;
+          cursor: default;
+        }
+      }
+    }
+    &__days {
+      &__day {
+        font-size: 1.7rem;
+        height: 5.77rem;
+      }
+    }
+  }
+}
+
+.react-calendar__tile {
+  &--now {
+    color: #232323;
+    font-weight: 700;
+  }
+
+  color: cyan;
+
+  &:enabled:hover {
+    background-color: grey;
+  }
+
+  &--active {
+    font-weight: 700;
+    color: white;
+
+    &:enabled:focus {
+      background-color: #1087ff;
+      color: #d4d4d4;
+    }
+  }
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+
+  &:active {
+    color: yellow;
+  }
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+}
+
+// LIGHT THEME

@@ -8,6 +8,7 @@
   border-radius: 50%;
   position: relative;
   transition: all 0.5s;
+  pointer-events: none;
 
   @media only screen and (max-width: 600px) {
     width: 28rem;
