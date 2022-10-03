@@ -11,8 +11,9 @@
   transition: background-color 0.3s 0.15s;
 
   @media only screen and (max-width: 800px) {
-    order: 1;
-    transform: translateX(-1.5rem);
+   position: absolute;
+   left: 2rem;
+   top: 3.5rem;
   }
 
   &-circle {

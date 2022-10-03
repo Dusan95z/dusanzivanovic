@@ -2,12 +2,14 @@ import './_home.scss';
 import { useContext } from 'react';
 import ThemeContext from '../../context/ThemeContext';
 import Clock from '../../features/Clock/Clock';
+import Calendar from '../../features/Calendar/Calendar';
 
 const Home = () => {
   const { darkMode } = useContext(ThemeContext);
 
   return (
     <main className={darkMode ? 'mainHome' : 'mainHome lightTheme-mainHome'}>
+      <Calendar />
       <Clock />
     </main>
   );
@@ -15,5 +17,5 @@ const Home = () => {
 
 export default Home;
 
-// https://www.youtube.com/watch?v=o1yMqPyYeAo
-// https://github.com/lashaNoz/Calendar
+// https://www.youtube.com/watch?v=m9OSBJaQTlM  js
+// https://www.youtube.com/watch?v=Q5Xen_Y7lUk  react

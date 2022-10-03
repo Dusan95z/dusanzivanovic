@@ -3,10 +3,9 @@
 .headerNav {
   @media only screen and (max-width: 800px) {
     width: 100%;
-    background-color: #232323;
     position: absolute;
     top: -23rem;
-    z-index: -10;
+    opacity: 0;
     transition: all 0.5s;
   }
 
@@ -70,11 +69,8 @@
 }
 
 .headerNav-active {
-  top: 9.9rem;
-}
-
-.headerNav-active-zindex {
-  z-index: auto;
+  top: 10rem;
+  opacity: 1;
 }
 
 // LIGHT THEME

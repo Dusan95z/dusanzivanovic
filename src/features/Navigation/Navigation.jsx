@@ -23,10 +23,6 @@ const Navigation = () => {
   return (
     <nav
       className={handleClasses()}
-      onTransitionEnd={(e) =>
-        e.target.classList.contains('headerNav-active') &&
-        e.target.classList.add('headerNav-active-zindex')
-      }
     >
       <ul className='nav-ul'>
         <NavigationLink pathName='/' linkTitle='Home' />
