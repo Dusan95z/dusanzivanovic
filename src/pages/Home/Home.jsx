@@ -9,8 +9,8 @@ const Home = () => {
 
   return (
     <main className={darkMode ? 'mainHome' : 'mainHome lightTheme-mainHome'}>
-      <Calendar />
       <Clock />
+      <Calendar />
     </main>
   );
 };
