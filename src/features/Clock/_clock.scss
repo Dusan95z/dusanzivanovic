@@ -157,15 +157,15 @@
     transition: all 0.5s;
 
     &-1 {
-      top: 4rem;
-      right: 13rem;
+      top: 3.7rem;
+      right: 12.6rem;
     }
     &-2 {
-      top: 12.5rem;
-      right: 4.5rem;
+      top: 12.1rem;
+      right: 4.1rem;
     }
     &-3 {
-      top: 23.5rem;
+      top: 23.2rem;
       right: 1rem;
     }
     &-4 {
@@ -177,8 +177,8 @@
       right: 13rem;
     }
     &-6 {
-      bottom: 1rem;
-      left: 24rem;
+      bottom: 0rem;
+      left: 23.8rem;
     }
     &-7 {
       top: 43rem;
@@ -189,35 +189,35 @@
       left: 4.5rem;
     }
     &-9 {
-      top: 23.5rem;
+      top: 23.2rem;
       left: 1rem;
     }
     &-10 {
-      top: 12.5rem;
-      left: 4.5rem;
+      top: 12.1rem;
+      left: 4.1rem;
     }
     &-11 {
-      top: 4rem;
-      left: 13rem;
+      top: 3.7rem;
+      left: 12.6rem;
     }
     &-12 {
-      top: 1rem;
-      left: 23.5rem;
+      top: 0.5rem;
+      left: 23.4rem;
     }
 
     @media only screen and(max-width: 600px) {
       font-size: 2rem;
 
       &-1 {
-        top: 2.24rem;
-        right: 7.28rem;
+        top: 1.9rem;
+        right: 6.84rem;
       }
       &-2 {
-        top: 7rem;
-        right: 2.52rem;
+        top: 6.4rem;
+        right: 2.12rem;
       }
       &-3 {
-        top: 13.16rem;
+        top: 12.86rem;
         right: 0.56rem;
       }
       &-4 {
@@ -225,15 +225,15 @@
         right: 2.52rem;
       }
       &-5 {
-        top: 24.08rem;
+        top: 23.58rem;
         right: 7.28rem;
       }
       &-6 {
-        bottom: 0.56rem;
-        left: 13.44rem;
+        bottom: 0rem;
+        left: 13rem;
       }
       &-7 {
-        top: 24.08rem;
+        top: 23.58rem;
         left: 7.28rem;
       }
       &-8 {
@@ -241,20 +241,20 @@
         left: 2.52rem;
       }
       &-9 {
-        top: 13.16rem;
+        top: 12.86rem;
         left: 0.56rem;
       }
       &-10 {
-        top: 7rem;
-        left: 2.52rem;
+        top: 6.4rem;
+        left: 2.12rem;
       }
       &-11 {
-        top: 2.24rem;
-        left: 7.28rem;
+        top: 1.9rem;
+        left: 6.84rem;
       }
       &-12 {
-        top: 0.56rem;
-        left: 13.16rem;
+        top: 0.2rem;
+        left: 12.7rem;
       }
     }
   }
