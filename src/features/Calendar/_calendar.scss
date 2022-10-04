@@ -5,6 +5,7 @@
   margin-left: 25rem;
   background-color: #232323;
   border: 2px solid #232323;
+  transition: background-color 0.5s;
 
   @media only screen and(max-width: 1400px) {
     margin-left: 15rem;
@@ -30,6 +31,15 @@
   margin-bottom: 0;
   background-color: #167e56;
   border-bottom: 2px solid #232323;
+  transition: background-color 0.5s;
+
+  @media only screen and(max-width: 600px) {
+    height: 8rem;
+  }
+
+  @media only screen and(max-width: 480px) {
+    height: 6rem;
+  }
 
   button:not(:last-child) {
     border-right: 2px solid #232323;
@@ -39,8 +49,17 @@
     background-color: #167e56;
   }
 
-  button:enabled:hover {
-    background-color: #646464;
+  
+  @media only screen and(max-width: 800px) {
+    button:enabled:hover {
+      background-color: #167e56;
+    }
+  }
+
+  @media only screen and(min-width: 800px) {
+    button:enabled:hover {
+      background-color: #646464;
+    }
   }
 }
 
@@ -48,12 +67,35 @@
   width: 15%;
   font-size: 4rem;
   color: #d4d4d4;
+  transition: color 0.3s;
+
+  @media only screen and(max-width: 600px) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and(max-width: 480px) {
+    font-size: 3rem;
+  }
 }
 
 .react-calendar__navigation__label {
+  padding: 0 0.5rem;
   font-size: 2.4rem;
   color: #d4d4d4;
   @include montserratMedium;
+  transition: color 0.3s;
+
+  @media only screen and(max-width: 600px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and(max-width: 480px) {
+    font-size: 1.6rem;
+  }
+
+  @media only screen and(max-width: 350px) {
+    font-size: 1.2rem;
+  }
 }
 
 .react-calendar__month-view__weekdays {
@@ -63,9 +105,20 @@
   font-size: 1.6rem;
   pointer-events: none;
   @include montserratMedium;
+  transition: color 0.5s;
+
+  @media only screen and(max-width: 480px) {
+    height: 3.5rem;
+  }
 }
 
 .react-calendar__month-view__weekdays__weekday {
+  @media only screen and(max-width: 480px) {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.3rem;
+  }
+
   abbr {
     text-decoration: none;
   }
@@ -95,6 +148,7 @@
   color: #d4d4d4;
   font-size: 1.4rem;
   @include montserratMedium;
+  transition: color 0.3s;
 
   &:enabled:hover {
     background-color: #646464;
@@ -143,10 +197,21 @@
     background-color: #d4d4d4;
   }
 
-  button:enabled:hover {
-    background-color: #646464;
-    color: #d4d4d4;
+  @media only screen and(max-width: 800px) {
+    button:enabled:hover {
+      background-color: #d4d4d4;
+      color: #232323;
+    }
   }
+  
+  @media only screen and(min-width: 800px) {
+    
+    button:enabled:hover {
+      background-color: #646464;
+      color: #d4d4d4;
+    }
+  }
+
 }
 
 .lightTheme-calendar .react-calendar__navigation__arrow {
@@ -186,7 +251,6 @@
   &:enabled:hover,
   &:enabled:focus {
     background-color: #167e56;
-    
   }
 }
 
