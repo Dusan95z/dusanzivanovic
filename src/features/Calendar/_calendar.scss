@@ -49,7 +49,6 @@
     background-color: #167e56;
   }
 
-  
   @media only screen and(max-width: 800px) {
     button:enabled:hover {
       background-color: #167e56;
@@ -133,9 +132,11 @@
       transform: scale(1);
     }
 
-    &:hover {
-      border-color: grey;
-      transform: scale(0.9);
+    @media only screen and(min-width: 800px) {
+      &:hover {
+        border-color: grey;
+        transform: scale(0.9);
+      }
     }
   }
 }
@@ -150,8 +151,16 @@
   @include montserratMedium;
   transition: color 0.3s;
 
-  &:enabled:hover {
-    background-color: #646464;
+  @media only screen and(min-width: 800px) {
+    &:enabled:hover {
+      background-color: #646464;
+    }
+  }
+
+  @media only screen and(max-width: 800px) {
+    &:enabled:hover {
+      background-color: #232323;
+    }
   }
 
   &:enabled:focus {
@@ -203,15 +212,13 @@
       color: #232323;
     }
   }
-  
+
   @media only screen and(min-width: 800px) {
-    
     button:enabled:hover {
       background-color: #646464;
       color: #d4d4d4;
     }
   }
-
 }
 
 .lightTheme-calendar .react-calendar__navigation__arrow {
@@ -228,9 +235,18 @@
 
 .lightTheme-calendar .react-calendar__month-view__days {
   button {
-    &:hover {
-      border-color: #232323;
-      color: #d4d4d4;
+    @media only screen and(min-width: 800px) {
+      &:hover {
+        border-color: #232323;
+        color: #d4d4d4;
+      }
+    }
+
+    @media only screen and(max-width: 800px) {
+      &:hover {
+        border-color: transparent;
+        color: #d4d4d4;
+      }
     }
   }
 }
@@ -238,7 +254,15 @@
 .lightTheme-calendar .react-calendar__tile {
   color: #232323;
 
+  @media only screen and(max-width: 800px) {
+    &:enabled:hover {
+      background-color: #d4d4d4;
+      color: #232323;
+    }   
+  }
+
   &:enabled:focus {
+    background-color: #167e56;
     color: #d4d4d4;
   }
 }
